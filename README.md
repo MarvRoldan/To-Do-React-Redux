@@ -1,4 +1,5 @@
 Followed along with [React Redux Tutorial](https://react-redux.js.org/introduction/basic-tutorial).
+
 Coded along with [Redux Todo App Tutorial](https://www.youtube.com/watch?v=m4tzUrjqOs4).
 
 ## Available Scripts
