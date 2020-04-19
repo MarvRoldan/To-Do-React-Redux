@@ -1,11 +1,12 @@
 import React, { Fragment } from "react";
-/*import AddTodo from '../containers/AddTodo';
-import VisibleTodoList from '../containers/VisibleTodoList';*/
+import AddTodo from "../containers/AddTodo";
+import VisibleTodoList from "../containers/VisibleTodoList";
 
 const App = () => (
-    <Fragment>
-        
-    </Fragment>
+  <Fragment>
+    <AddTodo />
+    <VivibleToDoList />
+  </Fragment>
 );
 
 export default App;

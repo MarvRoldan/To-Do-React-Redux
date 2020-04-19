@@ -1,8 +1,29 @@
 import React, { Fragment } from "react";
 import { connect } from "react-redux";
+import { addTodo } from "../actions";
 
-const AddTodo = () => {
-  return <Fragment></Fragment>;
+const AddTodo: any = ({ dispatch }: any) => {
+  let input: any;
+
+  return (
+    <Fragment>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+
+          if (!input.value.trim()) {
+            return;
+          }
+
+          dispatch(AddTodo(input.value));
+          input.value = "";
+        }}
+      >
+        <input type="text" ref={(el) => (input = el)} />
+        <button type="submit">Add Todo</button>
+      </form>
+    </Fragment>
+  );
 };
 
 export default connect()(AddTodo);
