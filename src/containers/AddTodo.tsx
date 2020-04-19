@@ -15,7 +15,7 @@ const AddTodo: any = ({ dispatch }: any) => {
             return;
           }
 
-          dispatch(AddTodo(input.value));
+          dispatch(addTodo(input.value));
           input.value = "";
         }}
       >

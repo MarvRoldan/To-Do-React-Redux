@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
 import AddTodo from "../containers/AddTodo";
-import VisibleTodoList from "../containers/VisibleTodoList";
+import VisibleToDoList from "../containers/VisibleToDoList";
 
 const App = () => (
   <Fragment>
     <AddTodo />
-    <VivibleToDoList />
+    <VisibleToDoList />
   </Fragment>
 );
 
